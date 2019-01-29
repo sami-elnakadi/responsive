@@ -290,3 +290,38 @@ footer h1
     text-decoration: none;
     color: #760001;
 }
+
+@media only screen and (max-width: 320px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #bloc_page{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 600px){
+
+
+
+}
