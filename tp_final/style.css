@@ -304,14 +304,17 @@ footer h1
         }
     nav ul{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
     
     }
     header{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
+        
     }
     footer{
         display: flex;
@@ -320,8 +323,35 @@ footer h1
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 600px){
+@media only screen and (min-width: 320px) /*and (max-width: 992px)*/{
 
-
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #bloc_page{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
